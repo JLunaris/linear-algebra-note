@@ -43,7 +43,7 @@
 ![[Pasted image 20260205161050.png|400]]
 要使矩阵 $A$ 与向量 $\mathbf{x}$ 能够相乘（$A\mathbf{x}$），必须满足前提：==矩阵 $A$ 的列数=向量 $\mathbf{x}$ 的行数==。
 
-##### 行观点：Inner Product with Row
+##### Row Aspect：Inner Product with Row
 
 矩阵 $A$ 的**每一行**分别与**向量 $\mathbf{x}$** 做内积。
 ![[Pasted image 20260205163216.png|500]]
@@ -52,7 +52,7 @@
 > ![[Pasted image 20260205164757.png|200]]
 > 则 $A\mathbf{x}=\begin{bmatrix}2\times 4 & 3\times 1 & 1\times3 \\ 1\times 4 & 5\times 1 & 3 \times 3\end{bmatrix}$
 
-##### 列观点：Weighted sum of Columns
+##### Column  Aspect：Weighted sum of Columns
 
 矩阵 $A$ 的**每一列**分别与**向量 $\mathbf{x}$ 的对应分量**相乘，做 weighted sum.
 

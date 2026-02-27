@@ -37,4 +37,4 @@ $\mathbf{v}=\begin{bmatrix}5 \\ 9 \\ 6\end{bmatrix}$，则 $\mathbf{v}_1=5$，$\
 
 ##### Unit Vector（单位向量）
 
-见[[4  system of linear equations]] 中的"Note"。
+见 [[4  system of linear equations]] 中的"Note"。
