@@ -165,11 +165,19 @@ $A$ 是一个 $m\times n$ 矩阵，有以下结论：
 
 > 例1：A system of linear equations is called *underdetermined* if it has **fewer equations than variables**. What can be said about the **number** of solutions of an underdetermined system?
 > 
-> ![[Pasted image 20260227123732.png|600]]
+> 解：方程个数 < 未知数个数，即 $m < n$。
+> - 是否有解？
+>     由 $A$ 和 $\mathbf{b}$ 共同决定，**可能有解也可能无解**。
+> - 有解的前提下，有唯一解/无穷多解？
+>     只跟 $A$ 有关。由于 $\text{rank}\ A \le \text{min}(m,n)=m<n$，因此**若有解，则必有无穷多解**。
 > 
 > 例2：A system of linear equations is called *overdetermined* if it has **more equations than variables**. What can be said about the **number** of solutions of an overdetermined system?
 > 
-> ![[Pasted image 20260227123754.png|600]]
+> 解：方程个数 > 未知数个数，即 $m > n$。
+> - 是否有解？
+>     由 $A$ 和 $\mathbf{b}$ 共同决定，**可能有解也可能无解**。
+> - 有解的前提下，有唯一解/无穷多解？
+>     只跟 $A$ 有关。$\text{rank}\ A=n$ 时，有**唯一解**；$\text{rank}\ A<n$ 时有**无穷多解**。
 
 ##### 有解的前提下，有唯一解/无穷多解？
 

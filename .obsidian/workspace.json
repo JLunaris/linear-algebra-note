@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "b3bd6bb7ad5db00a",
+        "id": "459b692504ad1dca",
         "type": "tabs",
         "children": [
           {
-            "id": "7aaead97f473f252",
+            "id": "55cab6de252c8f03",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 1/7  RREF.md",
+                "file": "Chapter 2/1  matrix multiplication.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "7  RREF"
+              "title": "1  matrix multiplication"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 251.5
+    "width": 248.5
   },
   "right": {
     "id": "de4ef524ccf89950",
@@ -156,17 +156,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapter 1/7  RREF.md",
+                "file": "Chapter 2/1  matrix multiplication.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "7  RREF 的大纲"
+              "title": "1  matrix multiplication 的大纲"
             }
           },
           {
-            "id": "84f82fac56cf2c1b",
+            "id": "b7d6be5e8b3db8e4",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -194,27 +194,29 @@
       "bases:新建数据库": false
     }
   },
-  "active": "7aaead97f473f252",
+  "active": "55cab6de252c8f03",
   "lastOpenFiles": [
-    "Pasted image 20260227123539.png",
-    "Chapter 1/7  RREF.md",
-    "resource/Pasted image 20260227123754.png",
-    "resource/Pasted image 20260227123732.png",
-    "Pasted image 20260227123223.png",
+    "Chapter 2/2  matrix inverse.md",
+    "Chapter 2/1  matrix multiplication.md",
     "Chapter 1/5  matrix.md",
     "Chapter 1/6  solution.md",
-    "resource/Pasted image 20260226111539.png",
-    "Pasted image 20260226111252.png",
-    "Pasted image 20260225175550.png",
-    "resource/Pasted image 20260225182647.png",
-    "resource/Pasted image 20260225111058.png",
-    "未命名.base",
-    "Chapter 1/1  linear.md",
-    "resource/Pasted image 20260224191734.png",
+    "Chapter 1/7  RREF.md",
+    "resource/Pasted image 20260302111558.png",
     "Chapter 1/4  system of linear equations.md",
+    "Pasted image 20260302111507.png",
+    "Pasted image 20260301185643.png",
     "Chapter 1/3  vector.md",
     "Chapter 1/2  course introduction.md",
-    "未命名",
+    "Chapter 1/1  linear.md",
+    "resource/Pasted image 20260301123015.png",
+    "resource/Pasted image 20260301122841.png",
+    "resource/Pasted image 20260301115054.png",
+    "resource/Pasted image 20260301113155.png",
+    "Pasted image 20260301112238.png",
+    "resource/Pasted image 20260301111515.png",
+    "Pasted image 20260301110250.png",
+    "Chapter 2",
+    "未命名.base",
     "resource",
     "Chapter 1"
   ]
