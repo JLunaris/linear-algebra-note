@@ -245,10 +245,25 @@ $$c_1\mathbf{u}_1+c_2\mathbf{u}_2+\cdots+c_k\mathbf{u}_k=\mathbf{0}\text{，}$$
 >     -「无穷多解」与「唯一解」互为否定
 > 因此，**对命题1两边取否定，等价关系仍然成立**。
 
+上述定理的另一种表述形式为：
+
+> [!important] Theorem
+> 对于 $m\times n$ 的矩阵 $A$：
+> - 方程 $A\mathbf{x}=\mathbf{b}$ **最多有 1 解** $\iff$ $A$ 的 columns 是 independent 的
+> - 方程 $A\mathbf{x}=\mathbf{b}$ 有**无穷多解** $\iff$ $A$ 的 columns 是 dependent 的
+
+> 证明：（仅证命题1，命题2前面已经证明）
+> - 左推右：有解的前提下，方程 $A\mathbf{x}=\mathbf{b}$ 有唯一解 $\implies$ $A$ 的 columns 是 independent 的
+> - 右推左：$A$ 的 columns 是 independent 的 $\implies$ 有解时必有唯一解 $\implies$ 最多有 1 解
+
+---
+
 > [!NOTE] homogeneous system of linear equations
 > 线性方程组 $A\mathbf{x}=\mathbf{b}$ 在 $\mathbf{b}=\mathbf{0}$ 时被称为 **homogeneous**（齐次的），否则被称为 **nonhomogeneous**（非齐次的）。
 > 
 > 性质：齐次线性方程组总是有 $\mathbf{x}=\mathbf{0}$ 作为它的一个解。
+
+---
 
 > 案例：证明向量组 dependent/independent
 > 

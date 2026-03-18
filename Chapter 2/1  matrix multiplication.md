@@ -163,7 +163,7 @@ $$(AB)\mathbf{v}=A(B\mathbf{v})$$
 矩阵 $A$ 是 $n\times n$ 方阵，定义 $A$ 的 **trace** 为 $A$ 的**对角线元素之和**：
 $$\text{trace}(A)=a_{11}+a_{22}+\cdots+a_{nn}$$
 
-> [!NOTE] Theorem
+> [!important] Theorem
 > $A$ 是 $m\times n$ 矩阵，$B$ 是 $n\times m$ 矩阵，有：==$\text{trace}(AB)=\text{trace}(BA)$==
 
 > 证明：
@@ -171,13 +171,13 @@ $$\text{trace}(A)=a_{11}+a_{22}+\cdots+a_{nn}$$
 > $\text{trace}(AB)=\sum\limits_{i=1}^{m}\sum\limits_{j=1}^{n}a_{ij}b_{ji}$
 > $BA$ 是 $n\times n$ 矩阵，其第 $i$ 个对角元素为 $\begin{bmatrix}b_{i1} & b_{i2} & \cdots & b_{im}\end{bmatrix}\begin{bmatrix}a_{1i} \\ a_{2i} \\ \vdots \\ a_{mi}\end{bmatrix}=\sum\limits_{j=1}^{m}b_{ij}a_{ji}$
 > $\text{trace}(BA)=\sum\limits_{i=1}^{n}\sum\limits_{j=1}^{m}b_{ij}a_{ji}$
-> $\xrightarrow{换个符号}$ $\text{trace}(BA)=\sum\limits_{j=1}^{n}\sum\limits_{i=1}^{m}b_{ji}a_{ij}$
+> $\xrightarrow{换个变量名}$ $\text{trace}(BA)=\sum\limits_{j=1}^{n}\sum\limits_{i=1}^{m}b_{ji}a_{ij}$
 > $\xrightarrow{交换求和符号顺序}$ $\text{trace}(BA)=\sum\limits_{i=1}^{m}\sum\limits_{j=1}^{n}b_{ji}a_{ij}$
 > 
 > 因此 $\text{trace}(AB)=\text{trace}(BA)$
 
 > [!NOTE] 
-> 可以把 $\sum$ 求和为类比编程语言中的 **for 循环**，例如 $\sum\limits_{i=1}^{n}\sum\limits_{j=1}^{m}b_{ij}a_{ji}$ 可以看作：
+> 可以把 $\sum$ 求和类比为编程语言中的 **for 循环**，例如 $\sum\limits_{i=1}^{n}\sum\limits_{j=1}^{m}b_{ij}a_{ji}$ 可以看作：
 > ```
 > double sum = 0;
 > for(int i = 1; i <= n; ++i)

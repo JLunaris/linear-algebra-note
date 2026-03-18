@@ -35,7 +35,7 @@
 >     原因：每个 pivot column 都是 unit vector $\mathbf{e}_1,\mathbf{e}_2,\cdots$，每个 unit vector 都一定不是其他 unit vector 的 linear combination。
 > - 由 Column Correspondence Theorem 知，$A$ 的 pivot columns 也是 independent 的。
 
-##### 每个 non-pivot column 一定是它左侧的 pivot columns 的 linear combination
+##### 每个 non-pivot column 一定是它左侧 pivot columns 的 linear combination
 
 ![[Pasted image 20260223125743.png|550]]
 
@@ -195,18 +195,18 @@ $A$ 是一个 $m\times n$ 矩阵，有以下结论：
 因此，在线性方程组 $A\mathbf{x}=\mathbf{b}$ 有解的前提下：
 - $\text{rank}\ A=n$ 就意味着 basic variables 的数量为 $n$，也就意味着 free variable 的数量为 $0$，也就意味着方程组**有唯一解**。
 - $\text{rank}\ A<n$ 就意味着 basic variables 的数量小于 $n$，也就意味着 free variable 的数量不为 $0$，也就意味着方程组**有无穷多解**。
-该结论与 [[6  solution]] 中的完全一致。
+这与 [[6  solution]] 中的结论完全一致。
 
 ##### 是否有解？
 
 > [!important] Theorem
 > 线性方程组 $A\mathbf{x}=\mathbf{b}$ **有解**
 > $\iff$ 增广矩阵 $\begin{bmatrix}A & \mathbf{b}\end{bmatrix}$ 的 RREF 中不存在形如 ==$\begin{bmatrix}0 & 0 & \cdots & 0 & d\end{bmatrix}$== （$d\ne 0$）的行
-> $\iff$ $\text{Rank}\ A = \text{Rank}\ \begin{bmatrix}A & \mathbf{b}\end{bmatrix}$
+> $\iff$ $\text{rank}\ A = \text{rank}\ \begin{bmatrix}A & \mathbf{b}\end{bmatrix}$
 > 
 > 线性方程组 $A\mathbf{x}=\mathbf{b}$ **无解**
 > $\iff$ 增广矩阵 $\begin{bmatrix}A & \mathbf{b}\end{bmatrix}$ 的 RREF 中存在形如 ==$\begin{bmatrix}0 & 0 & \cdots & 0 & d\end{bmatrix}$== （$d\ne 0$）的行
-> $\iff$ $\text{Rank}\ A \ne \text{Rank}\ \begin{bmatrix}A & \mathbf{b}\end{bmatrix}$
+> $\iff$ $\text{rank}\ A \ne \text{rank}\ \begin{bmatrix}A & \mathbf{b}\end{bmatrix}$
 
 > 案例：
 > ![[Pasted image 20260226111539.png|400]]
@@ -218,7 +218,7 @@ $A$ 是一个 $m\times n$ 矩阵，有以下结论：
 $A$ 是一个 $m\times n$ 矩阵，$A=\begin{bmatrix}\mathbf{a}_1 & \mathbf{a}_2 & \cdots & \mathbf{a}_n\end{bmatrix}$，有以下结论：
 
 > [!important] “线性方程组 $A\mathbf{x}=\mathbf{b}$ 对任意的 $\mathbf{b}$ 都有解”的等价条件
-> $\forall \mathbf{b} \in \mathbb{R}^m$，$A\mathbf{x}=\mathbf{b}$ 有解
+> $\forall \mathbf{b} \in \mathbb{R}^m$，方程 $A\mathbf{x}=\mathbf{b}$ 总是有解
 > 
 > `// 路径1`
 > $\iff$ $\forall \mathbf{b} \in \mathbb{R}^m$，$\mathbf{b}$ 是 columns of $A$ 的 linear combination

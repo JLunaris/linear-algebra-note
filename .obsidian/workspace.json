@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 2/1  matrix multiplication.md",
+                "file": "Chapter 2/2  matrix inverse.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1  matrix multiplication"
+              "title": "2  matrix inverse"
             }
           }
         ]
@@ -156,17 +156,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapter 2/1  matrix multiplication.md",
+                "file": "Chapter 2/2  matrix inverse.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "1  matrix multiplication 的大纲"
+              "title": "2  matrix inverse 的大纲"
             }
           },
           {
-            "id": "b7d6be5e8b3db8e4",
+            "id": "57f76bfbdd905605",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -194,27 +194,32 @@
       "bases:新建数据库": false
     }
   },
-  "active": "55cab6de252c8f03",
+  "active": "1fb37f5444b5546b",
   "lastOpenFiles": [
-    "Chapter 2/2  matrix inverse.md",
     "Chapter 2/1  matrix multiplication.md",
-    "Chapter 1/5  matrix.md",
+    "Chapter 2/2  matrix inverse.md",
+    "Chapter 2/2  matrix inverse.md",
+    "Test/1.md",
     "Chapter 1/6  solution.md",
     "Chapter 1/7  RREF.md",
-    "resource/Pasted image 20260302111558.png",
+    "resource/Pasted image 20260318101847.png",
+    "resource/Pasted image 20260317094921.png",
+    "resource/Pasted image 20260316200149.png",
+    "resource/Pasted image 20260316164138.png",
+    "Pasted image 20260316162322.png",
+    "Pasted image 20260316162210.png",
+    "resource/Pasted image 20260315165420.png",
+    "resource/Pasted image 20260315154313.png",
+    "Pasted image 20260315154206.png",
+    "原版.md",
+    "2  matrix inverse.md",
+    "Test",
+    "resource/Pasted image 20260313151844.png",
     "Chapter 1/4  system of linear equations.md",
-    "Pasted image 20260302111507.png",
-    "Pasted image 20260301185643.png",
+    "Chapter 1/5  matrix.md",
     "Chapter 1/3  vector.md",
     "Chapter 1/2  course introduction.md",
     "Chapter 1/1  linear.md",
-    "resource/Pasted image 20260301123015.png",
-    "resource/Pasted image 20260301122841.png",
-    "resource/Pasted image 20260301115054.png",
-    "resource/Pasted image 20260301113155.png",
-    "Pasted image 20260301112238.png",
-    "resource/Pasted image 20260301111515.png",
-    "Pasted image 20260301110250.png",
     "Chapter 2",
     "未命名.base",
     "resource",
