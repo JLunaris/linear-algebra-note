@@ -204,7 +204,7 @@ Matrix-Vector Product 中，可以将矩阵看作一个函数：对于 $m\times 
 >    $\xLeftrightarrow{1.2.1}$ ==$A$ 的 columns 是 independent 的==
 >    $\xLeftrightarrow{1.2.2}$ $\text{rank}\ A=n$
 >    $\xLeftrightarrow{1.2.3}$ $\text{nullity}\ A=0$
->    $\xLeftrightarrow{1.2.4}$ 方程 $A\mathbf{x}=\mathbf{0}$ 的唯一解是 $\mathbf{0}$
+>    $\xLeftrightarrow{1.2.4}$ ==方程 $A\mathbf{x}=\mathbf{0}$ 的唯一解是 $\mathbf{0}$==
 >    $\xLeftrightarrow{1.2.1.1}$ $A$ 的 RREF 是 $I_n$
 > 2. $A$ is onto
 >    $\xLeftrightarrow{2.1}$ 存在一个 $n\times n$ 矩阵 $B$ 使 $AB=I_n$
@@ -212,9 +212,10 @@ Matrix-Vector Product 中，可以将矩阵看作一个函数：对于 $m\times 
 >    $\xLeftrightarrow{2.2.1}$ $\text{Span}\ \{\mathbf{a}_1,\mathbf{a}_2,\dots,\mathbf{a}_n\}=\mathbb{R}^n$
 >    $\xLeftrightarrow{2.2.2}$ $\text{rank}\ A=n$
 > 3. $A$ 是若干 elementary matrix 的乘积
+> 4. ==$\forall \mathbf{b}\in \mathbb{R}^n$，方程 $A\mathbf{x}=\mathbf{b}$ 有唯一解==
 
 联想关系如图所示：
-![[Pasted image 20260316164138.png]]
+![[Pasted image 20260318171552.png]]
 
 > 证明：
 > **1** $A$ is one-to-one $\implies$ $A$ is onto $\implies$ $A$ is invertible，反之也成立
@@ -228,6 +229,42 @@ Matrix-Vector Product 中，可以将矩阵看作一个函数：对于 $m\times 
 > **2.2.1~2.2.2** 见 [[7  RREF#是否总是有解？]]
 > **3** 
 > ![[Pasted image 20260317094921.png|672]]
+> **4** 左推右：由1.2和2.2共同推出；右推左：右侧可推得1.2或2.2，而它们等价于 invertible。
+
+> 案例：Invertible 性质的应用
+> 
+> 【例1】$Q$ 是一个 invertible 的 $n\times n$ 矩阵。
+> 求证：$\{\mathbf{u}_1,\mathbf{u}_2,\dots,\mathbf{u}_k\}\subseteq \mathbb{R}^n$ independent $\iff$ $\{Q\mathbf{u}_1,Q\mathbf{u}_2,\dots,Q\mathbf{u}_k\}$ independent
+> 
+> 证明：
+> **左推右**：只要证 $c_1(Q\mathbf{u}_1)+c_2(Q\mathbf{u}_2)+\dots+c_k(Q\mathbf{u}_k)=\mathbf{0}$ 的唯一解是 $c_1=c_2=\cdots=c_k=0$
+> 原方程 $\iff$ $Q(c_1\mathbf{u}_1)+Q(c_2\mathbf{u}_2)+\dots+Q(c_k\mathbf{u}_k)=\mathbf{0}$ （线性系统的 preserving scaling 性质）
+> $\iff$ $Q(c_1\mathbf{u}_1+c_2\mathbf{u}_2+\cdots+c_k\mathbf{u}_k)=\mathbf{0}$ （线性系统的 preserving addition 性质）
+> 由 $Q$ is invertible 的性质知，方程的唯一解是 $c_1\mathbf{u}_1+c_2\mathbf{u}_2+\cdots+c_k\mathbf{u}_k=\mathbf{0}$
+> 由于 $\{\mathbf{u}_1,\mathbf{u}_2,\dots,\mathbf{u}_k\}$ independent，故方程的唯一解是 $c_1=c_2=\cdots=c_k=0$
+> **右推左**：只要证 $c_1\mathbf{u}_1+c_2\mathbf{u}_2+\cdots+c_k\mathbf{u}_k=\mathbf{0}$ 的唯一解是 $c_1=c_2=\cdots=c_k=0$
+> 原方程 $\iff$ $Q(c_1\mathbf{u}_1)+Q(c_2\mathbf{u}_2)+\dots+Q(c_k\mathbf{u}_k)=\mathbf{0}$
+> $\iff$ $c_1(Q\mathbf{u}_1)+c_2(Q\mathbf{u}_2)+\dots+c_k(Q\mathbf{u}_k)=\mathbf{0}$
+> 由于 $\{Q\mathbf{u}_1,Q\mathbf{u}_2,\dots,Q\mathbf{u}_k\}$ independent，故方程的唯一解是 $c_1=c_2=\cdots=c_k=0$
+> 
+> 【例2】$A$ 是一个 invertible 的 $n\times n$ 矩阵，令 $e_j$ 是 $\mathbb{R}^n$ 的第 $j$ 个 standard vector。
+> 求证：$A^{-1}$ 的第 $j$ 个 column 是方程 $A\mathbf{x}=e_j$ 的一个解。
+> 
+> 证明：$A^{-1}$ 的第 $j$ 个 column = $A^{-1}e_j$
+> 只要把它代入方程验证即可：左边 = $AA^{-1}e_j$ = $e_j$ = 右边
+> 
+> 【例3】$A$ 是一个 $n\times n$ 矩阵。
+> 求证：当且仅当 $A$ is invertible 时，命题"$AB=AC \iff B=C$"才成立。
+> 
+> 证明：相当于要证明以下两个命题
+> ①已知 $A$ is invertible，求证 $AB=AC \iff B=C$。
+>    左推右：$AB=AC$ $\iff$ $A^{-1}AB=A^{-1}AC$ $\iff$ $B=C$
+>    右推左：trivial
+> ②已知 $AB=AC \iff B=C$，求证 $A$ is invertible。
+>    证明：逆着推：$A$ is invertible $\iff$ 方程 $A\mathbf{x}=\mathbf{0}$ 的唯一解是 $\mathbf{0}$
+>    因此正着推时可以朝着“$A\mathbf{x}=\mathbf{0} \iff \mathbf{x}=\mathbf{0}$”这个方向
+>    取 $B=\mathbf{x}$，$C=\mathbf{0}$，则 $A\mathbf{x}=A\mathbf{0} \iff \mathbf{x}=\mathbf{0}$
+>    即 $A\mathbf{x}=\mathbf{0} \iff \mathbf{x}=\mathbf{0}$
 
 # Inverse of Matrix
 

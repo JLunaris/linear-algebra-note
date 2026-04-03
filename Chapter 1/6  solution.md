@@ -72,7 +72,7 @@ $\mathbf{u}_1, \mathbf{u}_2, \cdots, \mathbf{u}_k$ 的**所有** linear combinat
 > - 输入一个向量集`S`，输出一个向量集
 > - 功能：返回`S`中所有向量的**所有可能的 linear combination 构成的集合。**
 >
-> `VectorSet V = span(S)`，称”`S` ==generates== `V`“。
+> `VectorSet V = span(S)`，称：==`S` generates `V`==，==`S` 是 `V` 的一个 **generating set**==。
 
 > 案例：求span
 > 
@@ -106,18 +106,25 @@ $\mathbf{u}_1, \mathbf{u}_2, \cdots, \mathbf{u}_k$ 的**所有** linear combinat
 > ![[Pasted image 20260209123731.png|500]]
 
 > [!important] Theorem
-> ![[Pasted image 20260209110717.png|600]]
+> ![[Pasted image 20260209110717.png|580]]
 
 > 证明：
 > 【左推右】
->   $\vec{v} =b_1 \vec{u_1} + b_2 \vec{u_2} + \cdots + b_k \vec{u_k}$
+> $\vec{v} =b_1 \vec{u_1} + b_2 \vec{u_2} + \cdots + b_k \vec{u_k}$
 > 
 > $\begin{aligned}\forall \vec{z}\in \text{Span}\ \{\vec{u_1}, \vec{u_2}, \cdots, \vec{u_k}, \vec{v} \},\ \vec{z}&=c_1 \vec{u_1} + c_2 \vec{u_2} +\cdots+c_k \vec{u_k}+c\vec{v} \\ &=c_1 \vec{u_1} + c_2 \vec{u_2} +\cdots+c_k \vec{u_k}+c(b_1 \vec{u_1} + b_2 \vec{u_2} + \cdots + b_k \vec{u_k}) \\ &=(c_1+cb_1)\vec{u_1}+(c_2+cb_2)\vec{u_2}+\cdots+(c_k+cb_k)\vec{u_k} \\ &\in \text{Span}\ S \end{aligned}$
 > 
->  $\begin{aligned}\forall \vec{z}\in \text{Span}\ S,\ \vec{z}&=c_1 \vec{u_1} + c_2 \vec{u_2} +\cdots+c_k \vec{u_k}\\ &=c_1 \vec{u_1} + c_2 \vec{u_2} +\cdots+c_k \vec{u_k}+0\vec{v}\\ &\in \text{Span}\ \{\vec{u_1}, \vec{u_2}, \cdots, \vec{u_k}, \vec{v} \}\end{aligned}$
+> $\begin{aligned}\forall \vec{z}\in \text{Span}\ S,\ \vec{z}&=c_1 \vec{u_1} + c_2 \vec{u_2} +\cdots+c_k \vec{u_k}\\ &=c_1 \vec{u_1} + c_2 \vec{u_2} +\cdots+c_k \vec{u_k}+0\vec{v}\\ &\in \text{Span}\ \{\vec{u_1}, \vec{u_2}, \cdots, \vec{u_k}, \vec{v} \}\end{aligned}$
 >  
 > 【右推左】
->   $\vec{v} = 0\vec{u_1} + 0\vec{u_2} + \cdots + 0\vec{u_k} + \vec{v} \in \text{Span}\ \{\vec{u_1}, \vec{u_2}, \cdots, \vec{u_k}, \vec{v} \}=\text{Span}\ S$
+> $\vec{v} = 0\vec{u_1} + 0\vec{u_2} + \cdots + 0\vec{u_k} + \vec{v} \in \text{Span}\ \{\vec{u_1}, \vec{u_2}, \cdots, \vec{u_k}, \vec{v} \}=\text{Span}\ S$
+
+> [!summary] Summary
+> ![[Pasted image 20260402173817.png]]
+> - $\mathbf{v}$ 是 $\mathbf{u}_1,\mathbf{u}_2,\cdots,\mathbf{u}_k$ 的线性组合 $\iff$ $\mathbf{v}\in\text{Span}\ S$ $\iff$ $\mathbf{v}$ 的加入不会使 span 范围扩大
+> - $\mathbf{v}$ 不能由 $\mathbf{u}_1,\mathbf{u}_2,\cdots,\mathbf{u}_k$ 线性表出 $\iff$ $\mathbf{v}\notin\text{Span}\ S$ $\iff$ $\mathbf{v}$ 的加入会使 span 范围扩大
+
+---
 
 > [!NOTE] 两集合相等的充要条件
 > 集合 $A=B$ 的充要条件：$\forall x\in A, x\in B$ 且 $\forall x\in B, x\in A$ 
@@ -245,14 +252,10 @@ $$c_1\mathbf{u}_1+c_2\mathbf{u}_2+\cdots+c_k\mathbf{u}_k=\mathbf{0}\text{，}$$
 >     -「无穷多解」与「唯一解」互为否定
 > 因此，**对命题1两边取否定，等价关系仍然成立**。
 
-上述定理的另一种表述形式为：
+> [!important] 推论
+> 方程 $A\mathbf{x}=\mathbf{b}$ **最多有 1 解** $\iff$ $A$ 的 columns 是 independent 的
 
-> [!important] Theorem
-> 对于 $m\times n$ 的矩阵 $A$：
-> - 方程 $A\mathbf{x}=\mathbf{b}$ **最多有 1 解** $\iff$ $A$ 的 columns 是 independent 的
-> - 方程 $A\mathbf{x}=\mathbf{b}$ 有**无穷多解** $\iff$ $A$ 的 columns 是 dependent 的
-
-> 证明：（仅证命题1，命题2前面已经证明）
+> 证明：
 > - 左推右：有解的前提下，方程 $A\mathbf{x}=\mathbf{b}$ 有唯一解 $\implies$ $A$ 的 columns 是 independent 的
 > - 右推左：$A$ 的 columns 是 independent 的 $\implies$ 有解时必有唯一解 $\implies$ 最多有 1 解
 
@@ -262,6 +265,10 @@ $$c_1\mathbf{u}_1+c_2\mathbf{u}_2+\cdots+c_k\mathbf{u}_k=\mathbf{0}\text{，}$$
 > 线性方程组 $A\mathbf{x}=\mathbf{b}$ 在 $\mathbf{b}=\mathbf{0}$ 时被称为 **homogeneous**（齐次的），否则被称为 **nonhomogeneous**（非齐次的）。
 > 
 > 性质：齐次线性方程组总是有 $\mathbf{x}=\mathbf{0}$ 作为它的一个解。
+
+> [!important] 推论 for 齐次线性方程组
+> - 方程 $A\mathbf{x}=\mathbf{0}$ 有**唯一解** ($\mathbf{x}=\mathbf{0}$) $\iff$ $A$ 的 columns 是 independent 的
+> - 方程 $A\mathbf{x}=\mathbf{0}$ 有**无穷多解** $\iff$ $A$ 的 columns 是 dependent 的
 
 ---
 
@@ -290,7 +297,7 @@ $$c_1\mathbf{u}_1+c_2\mathbf{u}_2+\cdots+c_k\mathbf{u}_k=\mathbf{0}\text{，}$$
 > 求证：$S$ independent $\iff$ $\text{Span}\ S$ 中的任一向量写为 $c_1\mathbf{u}_1+c_2\mathbf{u}_2+\cdots+c_k\mathbf{u}_k$ 的形式时，这组 $c_1,c_2,\cdots,c_k$ 是唯一的。
 > 
 > 证明：
-> // 左推右
+> **左推右**：
 > 任取 $\mathbf{v}\in \text{Span}\ S$，假设 $\mathbf{v}$ 有多种表示，任取其中两种：
 > ① $\mathbf{v}=a_1\mathbf{u}_1+a_2\mathbf{u}_2+\cdots+a_k\mathbf{u}_k$
 > ② $\mathbf{v}=b_1\mathbf{u}_1+b_2\mathbf{u}_2+\cdots+b_k\mathbf{u}_k$
@@ -298,8 +305,7 @@ $$c_1\mathbf{u}_1+c_2\mathbf{u}_2+\cdots+c_k\mathbf{u}_k=\mathbf{0}\text{，}$$
 > ①-②得：$\mathbf{0}=(a_1-b_1)\mathbf{u}_1+(a_2-b_2)\mathbf{u}_2+\cdots+(a_k-b_k)\mathbf{u}_k$
 > 由 $\mathbf{a}=\mathbf{b}$ 知 $a_i-b_i$ 不全为0
 > 则 $\mathbf{u}_1,\mathbf{u}_2,\cdots,\mathbf{u}_k$ dependent，与已知条件矛盾！
-> 
-> // 右推左
+> **右推左**：
 > 只要证 $a_1\mathbf{u}_1+a_2\mathbf{u}_2+\cdots+a_k\mathbf{u}_k=\mathbf{0}$ 的唯一解是 $a_1=a_2=\cdots=a_k=0$
 > 已知 $\forall \mathbf{v}\in \text{Span}\ S$，$\mathbf{v}=c_1\mathbf{u}_1+c_2\mathbf{u}_2+\cdots+c_k\mathbf{u}_k$ 中 $c_1,c_2,\cdots,c_k$ 唯一
 > $\mathbf{0}\in \text{Span}\ S$，故 $\mathbf{0}=c_1\mathbf{u}_1+c_2\mathbf{u}_2+\cdots+c_k\mathbf{u}_k$ 中 $c_1,c_2,\cdots,c_k$ 唯一
@@ -307,13 +313,22 @@ $$c_1\mathbf{u}_1+c_2\mathbf{u}_2+\cdots+c_k\mathbf{u}_k=\mathbf{0}\text{，}$$
 > 因此方程 $a_1\mathbf{u}_1+a_2\mathbf{u}_2+\cdots+a_k\mathbf{u}_k=\mathbf{0}$ 的唯一解是 $a_1=a_2=\cdots=a_k=0$
 > 
 > 【例4】$S=\{\mathbf{u}_1,\mathbf{u}_2,\cdots,\mathbf{u}_k\}\subseteq\mathbb{R}^n$，$A$ 是 $m\times n$ 矩阵
-> 求证：若 $S$ dependent，且 $S'=\{A\mathbf{u}_1,A\mathbf{u}_2,\cdots,A\mathbf{u}_k\}$ 包含 $k$ 个不同的向量，则 $S'$ dependent.
+> 求证：$S$ dependent $\implies$ $S'=\{A\mathbf{u}_1,A\mathbf{u}_2,\cdots,A\mathbf{u}_k\}$ dependent
 > 
 > 证明：$c_1\mathbf{u}_1+c_2\mathbf{u}_2+\cdots+c_k\mathbf{u}_k=\mathbf{0}$，其中 $c_1,c_2,\cdots,c_k$ 不全为 $0$
 > 两边同乘 $A$ 得：$A(c_1\mathbf{u}_1+c_2\mathbf{u}_2+\cdots+c_k\mathbf{u}_k)=A\mathbf{0}=\mathbf{0}$
 > 即 $A(c_1\mathbf{u}_1)+A(c_2\mathbf{u}_2)+\cdots+A(c_k\mathbf{u}_k)=\mathbf{0}$
 > 即 $c_1(A\mathbf{u}_1)+c_2(A\mathbf{u}_2)+\cdots+c_k(A\mathbf{u}_k)=\mathbf{0}$，其中 $c_1,c_2,\cdots,c_k$ 不全为 $0$
-> 故 S dependent.
+> 故 $S'$ dependent.
+> 
+> 【例5】分析：如果例4中的 dependent 改为 independent，则命题是否成立？
+> 
+> 解：命题成立 $\iff$ $c_1(A\mathbf{u}_1)+c_2(A\mathbf{u}_2)+\cdots+c_k(A\mathbf{u}_k)=\mathbf{0}$ 的唯一解是 $c_1=c_2=\cdots=c_k=0$。
+> 也就是说，要使命题成立，等价于使“原方程 $\iff$ $c_1=c_2=\cdots=c_k=0$”成立。
+> - 正着推：$c_1(A\mathbf{u}_1)+c_2(A\mathbf{u}_2)+\cdots+c_k(A\mathbf{u}_k)=\mathbf{0}$ $\iff$ $A(c_1\mathbf{u}_1+c_2\mathbf{u}_2+\cdots+c_k\mathbf{u}_k)=\mathbf{0}$
+> - 逆着推：$c_1=c_2=\cdots=c_k=0$ $\iff$ $c_1\mathbf{u}_1+c_2\mathbf{u}_2+\cdots+c_k\mathbf{u}_k=\mathbf{0}$ （由 $S$ independent 知）
+> 但 $A(c_1\mathbf{u}_1+c_2\mathbf{u}_2+\cdots+c_k\mathbf{u}_k)=\mathbf{0}$ 不等价于 $c_1\mathbf{u}_1+c_2\mathbf{u}_2+\cdots+c_k\mathbf{u}_k=\mathbf{0}$，因此命题不成立。
+> 当且仅当“$A$ 的 columns 是 independent 的”时，上一行的命题才能等价，命题才成立。
 
 # Rank / Nullity
 

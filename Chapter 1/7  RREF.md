@@ -76,7 +76,7 @@
 > - 若**高瘦矩阵** ($m>n$) 的 columns 是 independent 的，则它的 RREF 一定是 $\begin{bmatrix}I\\ O\end{bmatrix}$。
 > - ==**矮胖矩阵** ($m<n$) 的 columns 一定是 dependent 的==。
 >   换句话说，==More than $m$ vectors in $\mathbb{R}^m$ must be dependent==。
->   换句话说，==$m$ 维空间中最多能选出 $m$ 个向量构成 independent 向量组==。
+>   换句话说，==$\mathbb{R}^m$ 中最多能选出 $m$ 个向量构成 independent 向量组==。
 
 # Check Independence
 
@@ -243,13 +243,15 @@ $A$ 是一个 $m\times n$ 矩阵，$A=\begin{bmatrix}\mathbf{a}_1 & \mathbf{a}_2
 > 
 > 右推左：设 $\begin{bmatrix}A & \mathbf{b}\end{bmatrix} \xrightarrow{RREF} \begin{bmatrix}R & \mathbf{b}'\end{bmatrix}$，由“RREF 按列分块性质”知 $R$ 正是 $A$ 的 RREF，结合原命题知 $R$ 中没有 zero row，则 $\begin{bmatrix}R & \mathbf{b}'\end{bmatrix}$ 中也没有 zero row。
 
+---
+
 > [!important] Theorem
 > $\mathbb{R}^m$ 中，$m$ 个 independent 向量的 Span 等于 $\mathbb{R}^m$。
 
-> 例如，3 维空间中，3 个 independent 向量的 Span 等于 $\mathbb{R}^3$。
+> 例如，3 维空间中，3 个 independent 向量一定可以 span 整个 $\mathbb{R}^3$。
 
 > 证明：
 > $\mathbb{R}^m$ 中，$m$ 个 independent 向量 $\mathbf{a}_1,\mathbf{a}_2,\cdots,\mathbf{a}_m$
 > 将它们组成矩阵：$A=\begin{bmatrix}\mathbf{a}_1 & \mathbf{a}_2 & \cdots & \mathbf{a}_m\end{bmatrix}$
 > 则根据 rank 的定义，$\text{rank}\ A=m$
-> $\implies$ $\text{Span}\ \{\mathbf{a}_1,\mathbf{a}_2,\cdots,\mathbf{a}_m\}=\mathbb{R}^m$（前面证明过）
+> $\iff$ $\text{Span}\ \{\mathbf{a}_1,\mathbf{a}_2,\cdots,\mathbf{a}_m\}=\mathbb{R}^m$（前面证明过）
