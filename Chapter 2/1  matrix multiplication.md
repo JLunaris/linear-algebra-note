@@ -101,9 +101,8 @@ $$(AB)\mathbf{v}=A(B\mathbf{v})$$
 >     - 左分配率：$C(P+Q)=CP+CQ$
 > 4. $I_k A=A=AI_m$
 > 5. 任何矩阵与零矩阵的乘积都是零矩阵。
-> 6. $(AC)^T=C^TA^T$
 
-> **证明**(1-5)：
+> **证明**：
 > 思路：将矩阵乘法展开为多个 Matrix-Vector Product，利用 Matrix-Vector Product 的性质进行推导，最后再收回为矩阵乘法。以②为例，其余同理。
 > 
 > $\begin{aligned}A(CP)&=A\begin{bmatrix}C\mathbf{p}_1 & C\mathbf{p}_2 & \cdots & C\mathbf{p}_p\end{bmatrix}\\ &=\begin{bmatrix}A(C\mathbf{p}_1) & A(C\mathbf{p}_2) & \cdots & A(C\mathbf{p}_p)\end{bmatrix}\\ &=\begin{bmatrix}(AC)\mathbf{p}_1 & (AC)\mathbf{p}_2 & \cdots & (AC)\mathbf{p}_p\end{bmatrix}\\ &=(AC)P\end{aligned}$
@@ -113,7 +112,14 @@ $$(AB)\mathbf{v}=A(B\mathbf{v})$$
 > - 第3个等号：矩阵乘法意义之“Composition of Linear Systems”，$A(B\mathbf{v})=(AB)\mathbf{v}$
 > - 第4个等号：矩阵乘法意义之“Multiple Inputs to a Linear System“，收回为 $(AC)P$
 
-> **证明**(6)：
+##### Matrix multiplication vs Transpose
+
+$A$ 是 $m \times n$ 矩阵，$C$ 是 $n \times p$ 矩阵，有：
+
+> [!important] Theorem
+> $$(AC)^T=C^TA^T$$
+
+> **证明**：
 > $A = \begin{bmatrix} a_{11} & a_{12} & \cdots & a_{1m} \\ a_{21} & a_{22} & \cdots & a_{2m} \\ \vdots & \vdots & \ddots & \vdots \\ a_{k1} & a_{k2} & \cdots & a_{km} \end{bmatrix}, \quad C = \begin{bmatrix} c_{11} & c_{12} & \cdots & c_{1n} \\ c_{21} & c_{22} & \cdots & c_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ c_{m1} & c_{m2} & \cdots & c_{mn} \end{bmatrix}$
 > 
 > $(AC)^T$ 的 ($i$, $j$)-entry 是 $AC$ 的 ($j$, $i$)-entry，也就是 **$A$ 的第 $j$ 行与 $C$ 的第 $i$ 列的 inner product**，即：
@@ -122,28 +128,20 @@ $$(AB)\mathbf{v}=A(B\mathbf{v})$$
 > $$[c_{1i} \quad c_{2i} \quad \dots \quad c_{mi}] \begin{bmatrix} a_{j1} \\ a_{j2} \\ \vdots \\ a_{jm} \end{bmatrix} = c_{1i} a_{j1} + c_{2i} a_{j2} + \dots + c_{mi} a_{jm}$$
 > 由于上述两个表达式相等，因此 $(AC)^T$ 的第 $(i, j)$ 个元素等于 $C^T A^T$ 的第 $(i, j)$ 个元素。 ■
 
----
-
-> [!NOTE] Power of Square Matrices
-> $A$ 是 $n\times n$ **方阵**，其幂定义为连乘：$A^k = \underbrace{A A \cdots A}_{k \text{ 个}} \quad (k \ge 1)$。
-> 规定 ==$A^0=I_n$==。
-
----
-
-> [!NOTE] 两个 Diagonal Matrix 相乘
-> $A = \text{diag}(a_1, a_2, \dots, a_n)$，$B = \text{diag}(b_1, b_2, \dots, b_n)$。它们的乘积仍然是一个对角矩阵，且对角线上的元素是 $A$、$B$ 中对应元素的乘积：==$AB = \text{diag}(a_1b_1, a_2b_2, \cdots, a_nb_n)$==
-
-> 案例：
-> ![[Pasted image 20260302111558.png|500]]
-
----
-
 > [!NOTE] 
 > $AA^T$ 和 $A^TA$ 都是对称矩阵。（$A$ 可以是任何矩阵）
 
 > 证明：要证 $C$ 是对称矩阵，只要证 $C^T=C$。
 > $(AA^T)^T=A^{TT}A^T=AA^T$ 
 > $(A^TA)^T=A^TA^{TT}=A^TA$
+
+##### 两个 Diagonal Matrix 相乘
+
+> [!NOTE] 
+> $A = \text{diag}(a_1, a_2, \dots, a_n)$，$B = \text{diag}(b_1, b_2, \dots, b_n)$。它们的乘积仍然是一个对角矩阵，且对角线上的元素是 $A$、$B$ 中对应元素的乘积：==$AB = \text{diag}(a_1b_1, a_2b_2, \cdots, a_nb_n)$==
+
+> 案例：
+> ![[Pasted image 20260302111558.png|500]]
 
 ##### Practical Computation Issue
 
@@ -157,6 +155,12 @@ $$(AB)\mathbf{v}=A(B\mathbf{v})$$
 - $(AC)P$：共执行 $(kmn+knp)$ 次乘法运算
 
 这两个数在实际问题中**可能相差几个数量级**。
+
+# Power of Square Matrices
+
+> [!example] Power of Square Matrices
+> $A$ 是 $n\times n$ **方阵**，其幂定义为连乘：$A^k = \underbrace{A A \cdots A}_{k \text{ 个}} \quad (k \ge 1)$。
+> 规定 ==$A^0=I_n$==。
 
 # 方阵的 trace
 

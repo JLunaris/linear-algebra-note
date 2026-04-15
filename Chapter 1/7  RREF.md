@@ -119,10 +119,10 @@
 > [!important] Theorem
 > **rank** = ==pivot columns 的个数== = ==RREF 中 non-zero rows 的个数==
 
-> **第二个等号的证明：**
+> **证明：pivot columns 的个数 = RREF 中 non-zero rows 的个数**
 > RREF 中，每一个 non-zero row 都会有一个 leading entry，而每一个 leading entry 对应一个 pivot column。
 
-> **第一个等号的证明：**
+> **证明：rank = pivot columns 的个数**
 > 设矩阵 $A$ 的 RREF 为 $R$。由 Column Correspondence Theorem 知
 > $$\text{rank}(R)=\text{rank}(A)$$
 >     ![[Pasted image 20260224191612.png|600]]
@@ -183,8 +183,8 @@ $A$ 是一个 $m\times n$ 矩阵，有以下结论：
 
 > [!important] Theorem
 > **线性方程组 $A\mathbf{x}=\mathbf{b}$ 有解的前提下**：
-> - $\text{rank}\ A$ = ==basic variables 的个数==
-> - $\text{nullity}\ A$ = ==free variables 的个数==
+> - $\text{rank}\ A$ = ==basic variable 的个数==
+> - $\text{nullity}\ A$ = ==free variable 的个数==
 
 > 证明：设 $R$ 是 $A$ 的 RREF
 > - basic variables 的个数 ==＝== $R$ 中 non-zero rows 的个数（因为 $R$ 中每个 non-zero row 都对应一个方程，每个方程都对应一个 basic variable）==＝== $\text{rank}\ A$

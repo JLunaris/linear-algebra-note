@@ -320,15 +320,6 @@ $$c_1\mathbf{u}_1+c_2\mathbf{u}_2+\cdots+c_k\mathbf{u}_k=\mathbf{0}\text{，}$$
 > 即 $A(c_1\mathbf{u}_1)+A(c_2\mathbf{u}_2)+\cdots+A(c_k\mathbf{u}_k)=\mathbf{0}$
 > 即 $c_1(A\mathbf{u}_1)+c_2(A\mathbf{u}_2)+\cdots+c_k(A\mathbf{u}_k)=\mathbf{0}$，其中 $c_1,c_2,\cdots,c_k$ 不全为 $0$
 > 故 $S'$ dependent.
-> 
-> 【例5】分析：如果例4中的 dependent 改为 independent，则命题是否成立？
-> 
-> 解：命题成立 $\iff$ $c_1(A\mathbf{u}_1)+c_2(A\mathbf{u}_2)+\cdots+c_k(A\mathbf{u}_k)=\mathbf{0}$ 的唯一解是 $c_1=c_2=\cdots=c_k=0$。
-> 也就是说，要使命题成立，等价于使“原方程 $\iff$ $c_1=c_2=\cdots=c_k=0$”成立。
-> - 正着推：$c_1(A\mathbf{u}_1)+c_2(A\mathbf{u}_2)+\cdots+c_k(A\mathbf{u}_k)=\mathbf{0}$ $\iff$ $A(c_1\mathbf{u}_1+c_2\mathbf{u}_2+\cdots+c_k\mathbf{u}_k)=\mathbf{0}$
-> - 逆着推：$c_1=c_2=\cdots=c_k=0$ $\iff$ $c_1\mathbf{u}_1+c_2\mathbf{u}_2+\cdots+c_k\mathbf{u}_k=\mathbf{0}$ （由 $S$ independent 知）
-> 但 $A(c_1\mathbf{u}_1+c_2\mathbf{u}_2+\cdots+c_k\mathbf{u}_k)=\mathbf{0}$ 不等价于 $c_1\mathbf{u}_1+c_2\mathbf{u}_2+\cdots+c_k\mathbf{u}_k=\mathbf{0}$，因此命题不成立。
-> 当且仅当“$A$ 的 columns 是 independent 的”时，上一行的命题才能等价，命题才成立。
 
 # Rank / Nullity
 
@@ -463,21 +454,21 @@ A system of linear equations is ==easily solvable== if its augmented matrix is i
 
 ##### 与solution of system of linear equations的关系
 
-![[Pasted image 20260214164116.png|500]]
+![[Pasted image 20260214164116.png|465]]
 
 ---
 
-![[Pasted image 20260214172722.png|580]]
+![[Pasted image 20260214172722.png|540]]
 
 方程组有无穷多解时，无法为每一个变量都找到唯一的取值，可以将其中一些变量（称为 **basic variable**）用其余变量（称为 **free variable**）来表示。
 
 通常把方程组中==最左侧的变量==（图中紫色方框所示，即 ==RREF 的 leading entry 对应的变量==）保留在等号左边，作为 basic variable；其他变量移到等号右边，作为 free variable。
 
-不过还有其他的表示形式（例如选 $x_2,x_3,x_5$ 作为 basic variable，$x_1,x_4$ 作为 free variable），方程组解集的 parametric representation **可能**有多种，它们都是等价的。
+不过还有其他的表示形式（例如选 $x_2,x_3,x_5$ 作为 basic variable，$x_1,x_4$ 作为 free variable），方程组解集的 parametric representation **可能**有多种，都是等价的。
 
 ---
 
-![[Pasted image 20260214184250.png|550]]
+![[Pasted image 20260214184250.png|523]]
 
 ##### 将矩阵化为RREF
 
