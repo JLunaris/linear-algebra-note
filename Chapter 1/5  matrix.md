@@ -32,6 +32,8 @@
 
 ![[Pasted image 20260205114100.png|300]]
 
+一般形式为 $\begin{bmatrix}d_1 & 0 & \cdots & 0 \\ 0 & d_2 & \cdots & 0 \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \cdots & d_n\end{bmatrix}$，记作 $\text{diag}(d_1, d_2, \dots, d_n)$。
+
 ##### Identity Matrix
 
 单位矩阵（通常记作 $I$ 或 $I_n$）是一个**主对角线全为 1，其余元素全为 0** 的方阵。
