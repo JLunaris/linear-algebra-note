@@ -49,6 +49,13 @@ $S=\{\mathbf{u}_1,\mathbf{u}_2,\cdots,\mathbf{u}_k\}\subseteq\mathbb{R}^n$，$A$
 > 助记：==矩阵相乘，rank 减小或保持不变==。
 
 > 证明：
+> **先证** $\text{rank}\ AB \leq \text{rank}\ A$：只要证 $\text{dim}(\text{Col}\ AB)\le\text{dim}(\text{Col}\ A)$
+> 只要证 $\text{Col}\ AB\subseteq \text{Col}\ A$
+> 只要证 $\forall \mathbf{w}\in \text{Col}\ AB$，$\mathbf{w}\in\text{Col}\ A$
+> $\mathbf{w}\in \text{Col}\ AB$ $\implies$ $\mathbf{w}=(AB)\mathbf{u}$ $\implies$ $\mathbf{w}=A(B\mathbf{u})$ $\implies$ $\mathbf{w}\in\text{Col}\ A$
+> 
+> **再证** $\text{rank}\ AB \leq \text{rank}\ B$：
+> $\text{rank}\ AB = \text{rank}(AB)^T = \text{rank}\ B^TA^T \le \text{rank}\ B^T = \text{rank}\ B$
 
 ##### 矩阵乘 invertible matrix（无论左乘/右乘），rank 保持不变
 

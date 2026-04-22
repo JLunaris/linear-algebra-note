@@ -90,10 +90,28 @@
 - 矩阵 $A$ 的 columns 的 span 称为 $A$ 的 **column space**，记作 $\text{Col}\ A$。
 - 矩阵 $A$ 的 rows 的 span 称为 $A$ 的 **row space**，记作 $\text{Row}\ A$。
 
+> $\text{Row}\ A=\text{Col}\ A^T$，$\text{Col}\ A=\text{Row}\ A^T$
+
 > [!important] Theorem
 > 矩阵的 column space 和 row space 都是 subspace。
 
 > 原因：span 是 subspace。
+
+> [!important] Theorem
+> $\mathbf{w}\in \text{Col}\ A$ $\iff$ 存在 $\mathbf{u}$ 使得 $\mathbf{w}=A\mathbf{u}$
+
+> 案例：
+> 
+> 【例1】$A$ 是 $m\times n$ 矩阵，$B$ 是 $n\times p$ 矩阵，求证：$\text{Col}\ AB\subseteq \text{Col}\ A$
+> 
+> 证明：只要证 $\forall \mathbf{w}\in \text{Col}\ AB$，$\mathbf{w}\in\text{Col}\ A$
+> $\mathbf{w}\in \text{Col}\ AB$ $\implies$ $\mathbf{w}=(AB)\mathbf{u}$ $\implies$ $\mathbf{w}=A(B\mathbf{u})$ $\implies$ $\mathbf{w}\in\text{Col}\ A$
+> 
+> 【例2】矩阵 $A$，求证：若 $\mathbf{u}\in\text{Row}\ A$ 且 $\mathbf{v}\in\text{Null}\ A$，则 $\mathbf{u}^T\mathbf{v}=0$。
+> 
+> 证明：$\mathbf{u}\in\text{Row}\ A$ $\iff$ $\mathbf{u}\in\text{Col}\ A^T$ $\implies$ $\mathbf{u}=A^T\mathbf{w}$
+> $\mathbf{v}\in\text{Null}\ A$ $\implies$ $A\mathbf{v}=\mathbf{0}$
+> 综上可知，$\mathbf{u}^T\mathbf{v}=(A^T\mathbf{w})^T\mathbf{v}=\mathbf{w}^TA\mathbf{v}=\mathbf{0}$
 
 ---
 
@@ -103,7 +121,7 @@
 > [!NOTE] 
 > 线性方程组 $A\mathbf{x}=\mathbf{b}$ 有解 $\iff$ $\mathbf{b}$ 在 $A$ 的 columns 的 span 中 $\iff$ ==$\mathbf{b}\in \text{Col}\ A$==
 
-> 例：$A=\begin{bmatrix}1 & 2 & 1 & -1 \\ 2 & 4 & 0 & -8 \\ 0 & 0 & 2 & 6 \end{bmatrix}$，问：$\mathbf{u}=\begin{bmatrix}2 \\ 1 \\ 1\end{bmatrix}$ 是否属于 $\text{Col}\ A$，$\mathbf{v}=\begin{bmatrix}2 \\ 1 \\ 3\end{bmatrix}$ 是否属于 $\text{Col}\ A$。
+> 【例】$A=\begin{bmatrix}1 & 2 & 1 & -1 \\ 2 & 4 & 0 & -8 \\ 0 & 0 & 2 & 6 \end{bmatrix}$，问：$\mathbf{u}=\begin{bmatrix}2 \\ 1 \\ 1\end{bmatrix}$ 是否属于 $\text{Col}\ A$，$\mathbf{v}=\begin{bmatrix}2 \\ 1 \\ 3\end{bmatrix}$ 是否属于 $\text{Col}\ A$。
 > 
 > 解：本质上是问 $A\mathbf{x}=\mathbf{u}$ 和 $A\mathbf{x}=\mathbf{v}$ 是否有解。
 > ![[Pasted image 20260329214023.png|567]]
@@ -113,6 +131,8 @@
 矩阵 $A$ 的 **null space** 定义为方程 $A\mathbf{x}=\mathbf{0}$ 的解集，记作 $\text{Null}\ A$。写成集合的形式为：
 $$\text{Null}\ A=\{\mathbf{x} \mid A\mathbf{x}=\mathbf{0}\}$$
 null space 表示“==所有被矩阵映射到 $\mathbf{0}$ 的输入向量的集合==”，这也是 “null” 这一名称的由来。
+
+![[Pasted image 20260422110206.png|204]]
 
 > 任何矩阵都有 null space（因为方程 $A\mathbf{x}=\mathbf{0}$ 至少有 $\mathbf{x}=\mathbf{0}$ 作为它的一个解)
 
