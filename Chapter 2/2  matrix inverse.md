@@ -317,7 +317,7 @@ Matrix-Vector Product 中，可以将矩阵看作一个函数：对于 $m\times 
 
 用此方法求解线性方程组通常**计算上更麻烦**（因为求 $A^{-1}$ 本身需要把 $[A \mid I]$ 化为 RREF，而在解方程组时，只需把 $[A\mid \mathbf{b}]$ 化为 RREF 就已经可以看出解集）。
 
-该方法适用于同一个矩阵解很多次的情况（$A\mathbf{x}=\mathbf{b}_1,A\mathbf{x}=\mathbf{b}_2,\dots$），先求 $A^{-1}$，再对不同的 $\mathbf{b}$ 套用 $\mathbf{x}=A^{-1}\mathbf{b}$。
+该方法适用于同一个矩阵解很多次的情况（$A\mathbf{x}=\mathbf{b}_1,A\mathbf{x}=\mathbf{b}_2,\dots$），先求 $A^{-1}$，再对不同的 $\mathbf{b}$ 套用 $\mathbf{x}=A^{-1}\mathbf{b}$。应用案例见[[3  Coordinate System#Change Coordinate]]。
 
 ##### 逆变换
 

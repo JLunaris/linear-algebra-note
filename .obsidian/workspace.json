@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 4/2  Rank 性质总结.md",
+                "file": "Chapter 4/3  Coordinate System.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2  Rank 性质总结"
+              "title": "3  Coordinate System"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapter 4/2  Rank 性质总结.md",
+                "file": "Chapter 4/3  Coordinate System.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2  Rank 性质总结 的大纲"
+              "title": "3  Coordinate System 的大纲"
             }
           },
           {
@@ -194,28 +194,29 @@
       "bases:新建数据库": false
     }
   },
-  "active": "b2ba88892e411430",
+  "active": "57f76bfbdd905605",
   "lastOpenFiles": [
+    "resource/Pasted image 20260430185035.png",
+    "Chapter 4/3  Coordinate System.md",
+    "resource/Pasted image 20260430181755.png",
+    "resource/Pasted image 20260430173743.png",
+    "resource/Pasted image 20260430174311.png",
     "Chapter 4/1  subspace.md",
     "Chapter 4/2  Rank 性质总结.md",
-    "Chapter 3/1  determinant.md",
-    "Chapter 2/2  matrix inverse.md",
     "Chapter 2/1  matrix multiplication.md",
+    "Chapter 2/2  matrix inverse.md",
+    "resource/Pasted image 20260430173016.png",
+    "Pasted image 20260430172732.png",
+    "resource/Pasted image 20260430170036.png",
+    "resource/Pasted image 20260430160144.png",
+    "resource/Pasted image 20260430153429.png",
+    "resource/Pasted image 20260429150311.png",
+    "Chapter 3/1  determinant.md",
     "Chapter 1/6  solution.md",
-    "resource/Pasted image 20260422110206.png",
-    "resource/Pasted image 20260422105249.png",
     "Chapter 1/5  matrix.md",
-    "resource/Pasted image 20260420152516.png",
-    "resource/Pasted image 20260420145115.png",
     "Chapter 1/7  RREF.md",
-    "resource/Pasted image 20260417212208.png",
-    "resource/Pasted image 20260417205118.png",
     "Chapter 3",
-    "resource/Pasted image 20260406172853.png",
     "Chapter 1/4  system of linear equations.md",
-    "resource/Pasted image 20260404181345.png",
-    "resource/Pasted image 20260403142501.png",
-    "resource/Pasted image 20260403114433.png",
     "Chapter 1/3  vector.md",
     "Chapter 4",
     "Test/1.md",
