@@ -109,7 +109,7 @@ $A$ 是一个 $n\times n$ 方阵，有如下定义：
 ##### det(AB)=det(A)det(B)
 
 > [!important] Theorem
-> $A$、$B$ 均为方阵，有：
+> $A$、$B$ 均为==方阵==，有：
 > $$\text{det}(AB)=\text{det}(A)\text{det}(B)$$
 
 > 例：$A$ is invertible，已知 $\text{det}(A)$，求 $\text{det}(A^{-1})$
@@ -133,6 +133,9 @@ $A$ 是一个 $n\times n$ 方阵，有如下定义：
 >    引理证明结束。
 >    左边：$\text{det}(AB)=\text{det}(E_k \cdots E_2 E_1 B)=\text{det}(E_k)\cdots\text{det}(E_2)\text{det}(E_1)\text{det}(B)$
 >    右边：$\text{det}(A)\text{det}(B)=\text{det}(E_k \cdots E_2 E_1)\text{det}(B)=\text{det}(E_k)\cdots\text{det}(E_2)\text{det}(E_1)\text{det}(B)$
+
+> [!NOTE] 推论
+> 若 $A$、$B$ 均为方阵，则 $\text{det}(AB)=\text{det}(BA)$。
 
 ##### 对矩阵做 transpose，不会改变矩阵的 determinant
 

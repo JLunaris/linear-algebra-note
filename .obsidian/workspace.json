@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 4/3  Coordinate System.md",
+                "file": "Chapter 5/1  eigenvalues and eigenvectors.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3  Coordinate System"
+              "title": "1  eigenvalues and eigenvectors"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapter 4/3  Coordinate System.md",
+                "file": "Chapter 5/1  eigenvalues and eigenvectors.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "3  Coordinate System 的大纲"
+              "title": "1  eigenvalues and eigenvectors 的大纲"
             }
           },
           {
@@ -196,35 +196,37 @@
   },
   "active": "57f76bfbdd905605",
   "lastOpenFiles": [
-    "resource/Pasted image 20260430185035.png",
-    "Chapter 4/3  Coordinate System.md",
-    "resource/Pasted image 20260430181755.png",
-    "resource/Pasted image 20260430173743.png",
-    "resource/Pasted image 20260430174311.png",
     "Chapter 4/1  subspace.md",
     "Chapter 4/2  Rank 性质总结.md",
-    "Chapter 2/1  matrix multiplication.md",
-    "Chapter 2/2  matrix inverse.md",
-    "resource/Pasted image 20260430173016.png",
-    "Pasted image 20260430172732.png",
-    "resource/Pasted image 20260430170036.png",
-    "resource/Pasted image 20260430160144.png",
-    "resource/Pasted image 20260430153429.png",
-    "resource/Pasted image 20260429150311.png",
-    "Chapter 3/1  determinant.md",
+    "Chapter 4/3  Coordinate System.md",
+    "Chapter 5/1  eigenvalues and eigenvectors.md",
     "Chapter 1/6  solution.md",
-    "Chapter 1/5  matrix.md",
     "Chapter 1/7  RREF.md",
+    "Chapter 2/2  matrix inverse.md",
+    "Chapter 3/1  determinant.md",
+    "Chapter 2/1  matrix multiplication.md",
+    "resource/Pasted image 20260505171327.png",
+    "resource/Pasted image 20260505165645.png",
+    "resource/Pasted image 20260505164017.png",
+    "resource/Pasted image 20260505163205.png",
+    "Pasted image 20260505161912.png",
+    "resource/Pasted image 20260505153850.png",
+    "Pasted image 20260505152122.png",
+    "Pasted image 20260505150851.png",
+    "Chapter 1/3  vector.md",
+    "Chapter 1/5  matrix.md",
+    "Chapter 1/1  linear.md",
+    "Chapter 1/2  course introduction.md",
+    "Chapter 5",
+    "resource/Pasted image 20260430185035.png",
+    "resource/Pasted image 20260430181755.png",
     "Chapter 3",
     "Chapter 1/4  system of linear equations.md",
-    "Chapter 1/3  vector.md",
     "Chapter 4",
     "Test/1.md",
     "原版.md",
     "2  matrix inverse.md",
     "Test",
-    "Chapter 1/2  course introduction.md",
-    "Chapter 1/1  linear.md",
     "Chapter 2",
     "未命名.base",
     "resource",
