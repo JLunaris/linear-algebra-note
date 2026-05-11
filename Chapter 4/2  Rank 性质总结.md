@@ -1,4 +1,6 @@
 
+# Rank 性质总结
+
 ### 向量集经过线性变换，“倾向于” dependent
 
 ![[Pasted image 20260406172853.png|219]]
