@@ -117,6 +117,8 @@
 
 > [!NOTE] 从 linear transformation 角度理解 column space
 > 设 $A$ 是 $m\times n$ 矩阵，有：$\text{Col}\ A$ = ==$\{A\mathbf{v} \mid \mathbf{v}\in \mathbb{R}^n \}$== = ==$A$ 所对应函数的 range==
+> 
+> ![[Pasted image 20260514154702.png|192]]
 
 > [!NOTE] 
 > 线性方程组 $A\mathbf{x}=\mathbf{b}$ 有解 $\iff$ $\mathbf{b}$ 在 $A$ 的 columns 的 span 中 $\iff$ ==$\mathbf{b}\in \text{Col}\ A$==

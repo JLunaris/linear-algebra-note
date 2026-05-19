@@ -33,7 +33,7 @@
 > [!example] 等价定义
 > 对于线性变换 $T$，若存在==非零向量 $\mathbf{v}$==、==标量 $\lambda$==，满足：$$T(\mathbf{v})=\lambda \mathbf{v}$$则称 $\mathbf{v}$ 是 $T$ 的 **eigenvector**，$\lambda$ 是 $T$ 的 **eigenvalue**。
 
-> 几何含义：经过线性变换 $T$ 后仍与原向量共线的非零向量，就是 eigenvector。
+> **几何含义**：经过线性变换 $T$ 后仍与原向量共线的非零向量，就是 eigenvector。
 
 ### 案例
 
@@ -162,6 +162,13 @@
 
 > [!NOTE] 深层含义
 > $A$ 和 $B$ 相似，意味着 $A$ 和 $B$ 是同一个线性变换，在不同 coordinate system 下看到的结果。而 eigenvalue 描述的是线性变换本身的内在性质，不依赖于具体的 coordinate system。因此，相似矩阵具有相同的 eigenvalue。
+
+##### $A$ 和 $A^T$ 具有相同的 characteristic polynomial，因而具有相同的 eigenvalue
+
+> [!important] Theorem
+> 方阵 $A$ 和 $A^T$ 具有相同的 characteristic polynomial，因而具有相同的 eigenvalue。
+
+> 证明：$\det(A^T-tI_n)=\det(A^T-(tI_n)^T)=\det(A-tI_n)^T=\det(A-tI_n)$
 
 ##### n 阶方阵的 characteristic polynomial 的 degree 为 n
 
@@ -363,3 +370,14 @@ $n$ 阶方阵的特征多项式是 $n$ 次多项式，结合上述定理可以�
 
 ##### 找到一个自然的 coordinate system，使线性变换变得简单
 
+> [!important] Theorem
+> 对于 $n$ 阶方阵 $A$：
+> $A$ 是可对角化的 $\iff$ $A$ 能够找到 $n$ 个 eigenvector 组成 $\mathbb{R}^n$ 的 basis
+
+> 证明：$A$ 是可对角化的 $\iff$ $A$ 能够找到 $n$ 个 independent 的 eigenvector
+> eigenvector $\in \mathbb{R}^n$，因此 $n$ 个 independent 的 eigenvector 是 $\mathbb{R}^n$ 的一个 basis
+
+> [!success] 找到一个自然的 coordinate system，使线性变换变得简单
+> 若 $A$ 是可对角化的（$A=PDP^{-1}$，其中 $P$ 是可逆矩阵、$D$ 是对角矩阵），则 $A$ 相似于 $D$，$D$ 是在 $P$（由 $A$ 的 eigenvector 组成）这个 coordinate system 下看到的结果，是一个简单的矩阵（对角矩阵）。
+> 
+> ![[Pasted image 20260512154235.png|350]]

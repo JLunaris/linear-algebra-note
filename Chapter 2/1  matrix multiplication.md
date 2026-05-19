@@ -93,12 +93,12 @@ $$(AB)\mathbf{v}=A(B\mathbf{v})$$
 ---
 
 > [!important] Properties of Matrix Multiplication
-> $A$ 和 $B$ 是 $k \times m$ 矩阵，$C$ 是 $m \times n$ 矩阵，$P$ 和 $Q$ 是 $n \times p$ 矩阵。则下列命题成立：
+> $A$ 和 $B$ 是 $k \times m$ 矩阵，$C$ 是 $m \times n$ 矩阵，$P$ 和 $Q$ 是 $n \times p$ 矩阵。
 > 1. **数乘结合律**：对任意标量 $s$，$s(AC)=(sA)C=A(sC)$
 > 2. **结合律**：$A(CP)=(AC)P$
 > 3. **分配率**
->     - 右分配率：$(A+B)C=AC+BC$
 >     - 左分配率：$C(P+Q)=CP+CQ$
+>     - 右分配率：$(A+B)C=AC+BC$
 > 4. $I_k A=A=AI_m$
 > 5. 任何矩阵与零矩阵的乘积都是零矩阵。
 

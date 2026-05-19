@@ -54,6 +54,8 @@ Coordinate System 是一种表示向量的“观点”：
 > $$B[\mathbf{v}]_\mathcal{B}=\mathbf{v}$$
 > 其中 $B=\begin{bmatrix}\mathbf{b}_1 & \mathbf{b}_2 & \cdots & \mathbf{b}_n\end{bmatrix}$。显然 $B$ is invertible，因此上式等价于：$[\mathbf{v}]_B=B^{-1}\mathbf{v}$。
 
+> 助记：$\mathbf{v}\xrightarrow{B^{-1}}[\mathbf{v}]_B$：去往异世界，要带着盾牌；$[\mathbf{v}]_B\xrightarrow{B}\mathbf{v}$：从异世界回来，不需要盾牌。
+
 > 证明：设 $[\mathbf{v}]_\mathcal{B}=\begin{bmatrix}c_1 \\ c_2 \\ \vdots \\ c_n\end{bmatrix}$，则 $\mathbf{v}=c_1\mathbf{b}_1+c_2\mathbf{b}_2+\cdots+c_n\mathbf{b}_n=B[\mathbf{v}]_\mathcal{B}$
 > 由 $B$ 是 basis 知 $B$ 的 columns 是 independent 的，结合 $B$ 是方阵知 $B$ is invertible。
 
