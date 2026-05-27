@@ -78,6 +78,14 @@
 
 ### 定理
 
+##### Pythagorean Theorem
+
+> [!important] Pythagorean Theorem in $\mathbb{R}^n$（毕达哥拉斯定理）
+> $$\mathbf{u}\perp \mathbf{v} \iff \|\mathbf{u}+\mathbf{v}\|^2=\|\mathbf{u}\|^2+\|\mathbf{v}\|^2$$
+
+> 证明：$\|\mathbf{u}+\mathbf{v}\|^2= \|\mathbf{u}\|^2+2(\mathbf{u}\cdot\mathbf{v})+\|\mathbf{v}\|^2$
+> $\mathbf{u}\perp \mathbf{v}$ $\iff$ $\mathbf{u}\cdot\mathbf{v}=0$ $\iff$ $\|\mathbf{u}+\mathbf{v}\|^2=\|\mathbf{u}\|^2+\|\mathbf{v}\|^2$
+
 ##### Cauchy–Schwarz Inequality
 
 > [!important] Cauchy–Schwarz Inequality（柯西-施瓦茨不等式，简称柯西不等式）
@@ -163,7 +171,7 @@
 
 > 例如 $\mathcal{S} = \left\{ \begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}, \begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix}, \begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix} \right\}$ 是 $\mathbb{R}^3$ 的 basis，也是 orthogonal basis，也是 orthonormal basis
 
-### Orthogonal Decomposition Theorem
+### 用 orthogonal / orthonormal basis 表示 subspace 中的向量
 
 > [!important] Theorem
 > $S=\{\mathbf{v}_1,\mathbf{v}_2,\cdots,\mathbf{v}_k\}$ 是 subspace $V$ 的一个 ==orthogonal basis==，则对于任意 $\mathbf{u}\in V$ 有：
@@ -220,21 +228,3 @@
 > **(4)** 证明它是 $\text{Span}\{\mathbf{u}_1,\mathbf{u}_2,\cdots,\mathbf{u}_k\}$ 的 basis
 > **(4.1)** 证明它 independent：前面证明过它是 orthogonal set，因此只要证它不含 $\mathbf{0}$，即可证明它 independent。(2) 已经证明了它不含 $\mathbf{0}$。    ■
 > **(4.2)** 证明它是 generating set：即证 $\text{Span}\{\mathbf{v}_1,\mathbf{v}_2,\cdots,\mathbf{v}_{k}\}=\text{Span}\{\mathbf{u}_1,\mathbf{u}_2,\cdots,\mathbf{u}_{k}\}$。(1) 已经证明了这一点。    ■
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
