@@ -2,14 +2,13 @@
 # Norm
 
 > [!example] norm (length)
-> 向量 $\mathbf{v}=\begin{bmatrix}v_1 \\ v_2 \\ \vdots \\ v_n\end{bmatrix}$ 的 **norm** 定义为 $\| \mathbf{v} \|=\sqrt{v_1^2+v_2^2+\cdots+v_n^2}$.
+> 向量 $\mathbf{v}=\begin{bmatrix}v_1 \\ v_2 \\ \vdots \\ v_n\end{bmatrix}$ 的 **norm** 定义为 $\| \mathbf{v} \|=\sqrt{|v_1|^2+|v_2|^2+\cdots+|v_n|^2}$.
 
 > [!quote] p-norm
 > 向量 $\mathbf{v}=\begin{bmatrix}v_1 \\ v_2 \\ \vdots \\ v_n\end{bmatrix}$ 的 **p-norm** 的定义为 $\|\mathbf{v}\|_p = \left( \sum\limits_{i=1}^n |v_i|^p \right)^{1/p}$，其中 $p\ge 1$. 例如：
 > - 1-norm：$\| \mathbf{v} \|_1=|v_1|+|v_2|+\cdots+|v_n|$
-> - 2-norm：$\| \mathbf{v} \|_2=\sqrt{v_1^2+v_2^2+\cdots+v_n^2}$
+> - 2-norm：$\| \mathbf{v} \|_2=\sqrt{|v_1|^2+|v_2|^2+\cdots+|v_n|^2}$
 > - 3-norm：$\| \mathbf{v} \|_3=\sqrt[3]{|v_1|^3+|v_2|^3+\cdots+|v_n|^3}$
-> - 4-norm：$\| \mathbf{v} \|_4=\sqrt[4]{v_1^4+v_2^4+\cdots+v_n^4}$
 
 > [!example] distance
 > 向量 $\mathbf{u}$ 和 $\mathbf{v}$ 的 **distance** 定义为 $\| \mathbf{u}-\mathbf{v} \|$.

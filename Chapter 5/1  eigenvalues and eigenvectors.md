@@ -238,7 +238,7 @@ $n$ 阶方阵的特征多项式是 $n$ 次多项式，结合上述定理可以�
 > 由于 $D$ 是对角矩阵，结合对角矩阵相乘的性质知 $D=O$。
 > 则 $A=PDP^{-1}=O$，与 $A=\begin{bmatrix}0 & 1 \\ 0 & 0\end{bmatrix}$ 矛盾！
 
-### 可对角化 ⟺ 能够找到 n 个 independent 的 eigenvector
+### 可对角化 ⟺ 能够找到 n 个 independent 的 eigenvector（构成P），它们对应的 eigenvalue 构成 D
 
 > [!important] Theorem
 > 对于 $n$ 阶方阵 $A$：
@@ -251,7 +251,11 @@ $n$ 阶方阵的特征多项式是 $n$ 次多项式，结合上述定理可以�
 > $\iff$ $A\mathbf{p}_i=d_i\mathbf{p}_i$（$i=1,2,\cdots,n$）
 > $\iff$ $\mathbf{p}_i$ 是 $A$ 的 eigenvector，对应的 eigenvalue 是 $d_i$（$i=1,2,\cdots,n$）
 > 由于 $P$ 是可逆阵，因此
-> $\iff$ $A$ 能够找到 $n$ 个 independent 的 eigenvector，构成 $P$，它们对应的 eigenvalue 构成 $D$
+> $\iff$ $A$ 能够找到 $n$ 个 independent 的 eigenvector (构成 $P$)，它们对应的 eigenvalue 构成 $D$
+
+> [!important] 推论
+> 对于 $n$ 阶方阵 $A$（$P$ 是可逆矩阵，$D$ 是对角矩阵）：
+> $A=PDP^{-1}$ $\iff$ $P$ 的每一列都是 $A$ 的 eigenvectors，它们对应的 eigenvalue 构成 $D$
 
 上述定理和证明过程告诉我们，如何对角化一个可对角化的矩阵 $A$：
 

@@ -233,7 +233,7 @@
 > $\begin{aligned}(P_W+P_{W^\perp})\mathbf{u}&=(P_W+P_{W^\perp})(\mathbf{w}+\mathbf{z})\\ &= P_W(\mathbf{w}+\mathbf{z})+P_{W^\perp}(\mathbf{w}+\mathbf{z})\\ &=P_W\mathbf{w}+P_W\mathbf{z}+P_{W^\perp}\mathbf{w}+P_{W^\perp}\mathbf{z} \\ &=\mathbf{w}+\mathbf{0}+\mathbf{0}+\mathbf{z}\\ &= \mathbf{u} \end{aligned}$
 > 由于 $(P_W+P_{W^\perp})\mathbf{u}=\mathbf{u}$ 对任意 $\mathbf{u}\in\mathbb{R}^n$ 都成立，因此 $P_W+P_{W^\perp}=I_n$。
 
-##### 使用 orthogonal / orthonormal basis 计算 orthogonal projection
+##### 用 orthogonal / orthonormal basis 计算 orthogonal projection
 
 > [!important] Theorem
 > $W$ 是 $\mathbb{R}^n$ 的 subspace，$W$ 的 ==orthogonal basis== 是 $\{\mathbf{v}_1,\mathbf{v}_2,\cdots,\mathbf{v}_k\}$，则对于任意的 $\mathbf{u}\in \mathbb{R}^n$，$\mathbf{u}$ 在 $W$ 上的 orthogonal projection
@@ -297,6 +297,7 @@ $$E = [y_1 - (a_0 + a_1x_1)]^2 + [y_2 - (a_0 + a_1x_2)]^2 + \dots + [y_n - (a_0 
 > 已知 $n$ 个真实数据 $(x_i,y_i)$。
 > 构造矩阵 $C = \begin{bmatrix} 1 & x_1 & x_1^2 & \cdots & x_1^k \\ 1 & x_2 & x_2^2 & \cdots & x_2^k \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ 1 & x_n & x_n^2 & \cdots & x_n^k \end{bmatrix}$，$\mathbf{a}=\begin{bmatrix} a_0 \\ a_1 \\ \vdots \\ a_k \end{bmatrix}$，$\mathbf{y} = \begin{bmatrix} y_1 \\ y_2 \\ \vdots \\ y_n \end{bmatrix}$。
 > 求解方程 $C\mathbf{a}=P_W\mathbf{y}$ 即可（其中 $P_W$ 是 $\text{Col}\ C$ 的 orthogonal projection matrix）。
+> 特别地，若 $C$ 的 columns 是 independent 的，则 $\mathbf{a}=(C^TC)^{-1}C^T\mathbf{y}$。
 
 > 案例：将一组单自变量数据拟合为二次曲线
 > ![[Pasted image 20260527172518.png|214]]
@@ -305,6 +306,7 @@ $$E = [y_1 - (a_0 + a_1x_1)]^2 + [y_2 - (a_0 + a_1x_2)]^2 + \dots + [y_n - (a_0 
 > 已知 $n$ 个真实数据 $(x_{1i},x_{2i},\cdots,x_{ki},y_i)$。
 > 构造矩阵 $C = \begin{bmatrix} 1 & x_{11} & x_{21} & \cdots & x_{k1} \\ 1 & x_{12} & x_{22} & \cdots & x_{k2} \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ 1 & x_{1n} & x_{2n} & \cdots & x_{kn} \end{bmatrix}$，$\mathbf{a}=\begin{bmatrix} a_0 \\ a_1 \\ \vdots \\ a_k \end{bmatrix}$，$\mathbf{y} = \begin{bmatrix} y_1 \\ y_2 \\ \vdots \\ y_n \end{bmatrix}$。
 > 求解方程 $C\mathbf{a}=P_W\mathbf{y}$ 即可（其中 $P_W$ 是 $\text{Col}\ C$ 的 orthogonal projection matrix）。
+> 特别地，若 $C$ 的 columns 是 independent 的，则 $\mathbf{a}=(C^TC)^{-1}C^T\mathbf{y}$。
 
 > 案例：将一组多自变量数据拟合为平面
 > ![[Pasted image 20260527174001.png|313]]
