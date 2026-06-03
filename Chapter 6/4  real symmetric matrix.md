@@ -59,3 +59,50 @@
 > $A$ 是实对称矩阵，因此不同 eigenvalue 对应的 eigenvector 是 orthogonal 的，因此 $\{\begin{bmatrix} -1 \\ 1 \\ 0 \end{bmatrix},\begin{bmatrix} -1 \\ 0 \\ 1 \end{bmatrix}\}$ 和 $\begin{bmatrix}1 \\ 1 \\ 1\end{bmatrix}$ 是 orthogonal 的。
 > 但 $\{\begin{bmatrix} -1 \\ 1 \\ 0 \end{bmatrix},\begin{bmatrix} -1 \\ 0 \\ 1 \end{bmatrix}\}$ 内部不是 orthogonal 的，只是 independent 的。由于这是个 basis，因此可以对它做 Gram-Schmidt Process，从而得到 orthogonal basis $\left\{\begin{bmatrix} -1 \\ 1 \\ 0 \end{bmatrix},-\cfrac{1}{2}\begin{bmatrix} 1 \\ 1 \\ -2 \end{bmatrix}\right\}$。
 > 对这三个向量做 normalization 后组成 $P = \begin{bmatrix} -\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{6}} & \frac{1}{\sqrt{3}} \\ \frac{1}{\sqrt{2}} & \frac{1}{\sqrt{6}} & \frac{1}{\sqrt{3}} \\ 0 & -\frac{2}{\sqrt{6}} & \frac{1}{\sqrt{3}} \end{bmatrix}$，此时 $D = \begin{bmatrix} 2 & 0 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 8 \end{bmatrix}$。
+
+# 特殊的实对称矩阵
+
+### Positive Definite Matrix
+
+> [!example] positive definite
+> ==实对称矩阵== $C$（$n\times n$），若对于任意==非零向量== $\mathbf{v}\in\mathbb{R}^n$，都有
+> $$\mathbf{v}^TC\mathbf{v}> 0$$
+> 称 $C$ 是 **positive definite** 的。
+
+> [!important] Theorem
+> 对于==实对称矩阵== $A$：
+> $A$ 是 positive definite 的 $\iff$ $A$ 的所有 eigenvalue 都 $>0$
+
+> 证明：
+> **左推右**：任取 $A$ 的一个 eigenvalue $\lambda$，对应 eigenvector $\mathbf{v}$。只要证 $\lambda>0$。
+> 由 $A$ 正定知 $\mathbf{v}^TA\mathbf{v}>0$ $\implies$ $\mathbf{v}^T \lambda\mathbf{v}>0$ $\implies$ $\lambda\|\mathbf{v}\|^2>0$ $\implies$ $\lambda>0$
+> **右推左**：任取 $\mathbf{v}\in\mathbb{R}^n$，$\mathbf{v}\neq\mathbf{0}$，只要证 $\mathbf{v}^TA\mathbf{v}>0$。
+> $A$ 是实对称矩阵，一定可正交对角化：$A=PDP^T$（其中 $P$ 是正交矩阵，由 $A$ 的 eigenvector 构成；$D$ 是对角矩阵，由 $A$ 的 eigenvalue 构成）。
+> 则 $\mathbf{v}^TA\mathbf{v}=\mathbf{v}^TPDP^T\mathbf{v}$
+> 记 $\mathbf{y}=P^T\mathbf{v}$，则 $\mathbf{v}^TA\mathbf{v}=\mathbf{y}^TD\mathbf{y}=\mathbf{y}\cdot D\mathbf{y}=\begin{bmatrix}y_1 \\ y_2 \\ \vdots \\ y_n\end{bmatrix}\cdot \begin{bmatrix}\lambda_1y_1 \\ \lambda_2y_2 \\ \vdots \\ \lambda_ny_n\end{bmatrix}=\lambda_1y_1^2+\lambda_2y_2^2+\cdots+\lambda_ny_n^2$
+> 由于 $\mathbf{v}\neq \mathbf{0}$，$P^T$ 是可逆矩阵，因此 $\mathbf{y}\neq\mathbf{0}$。
+> $y_i$ 不全为 $0$，$\lambda_i>0$ $\implies$ $\mathbf{v}^TA\mathbf{v}>0$    ■
+> 
+> 注释：
+> ①为什么 $P^T$ 是可逆矩阵：$P$ 是正交矩阵 $\implies$ $P^T$ 是正交矩阵 $\implies$ $P^T$ 的 columns 是 orthonormal 的 $\implies$ $P^T$ 的 columns 是 independent 的
+> ②为什么由 $\mathbf{v}\neq \mathbf{0}$、$P^T$ 是可逆矩阵，可以推出 $\mathbf{y}\neq\mathbf{0}$：$P^T$ 是可逆矩阵 $\implies$ $P^T$ 是 one-to-one 的 $\implies$ $P^T\mathbf{0}=\mathbf{0}$，只有 $\mathbf{0}$ 会映射到 $\mathbf{0}$。而 $\mathbf{v}\neq \mathbf{0}$，所以映射到的一定不是 $\mathbf{0}$。
+
+### Positive Semidefinite Matrix
+
+> [!example] positive semidefinite
+> ==实对称矩阵== $C$（$n\times n$），若对于任意 $\mathbf{v}\in\mathbb{R}^n$，都有
+> $$\mathbf{v}^TC\mathbf{v}\ge 0$$
+> 称 $C$ 是 **positive semidefinite** 的。
+
+> [!important] Theorem
+> 对于==实对称矩阵== $A$：
+> $A$ 是 positive semidefinite 的 $\iff$ $A$ 的所有 eigenvalue 都 $\ge 0$
+
+> 证明：
+> **左推右**：任取 $A$ 的一个 eigenvalue $\lambda$，对应 eigenvector $\mathbf{v}$。只要证 $\lambda\ge 0$。
+> 由 $A$ 半正定知 $\mathbf{v}^TA\mathbf{v}\ge 0$ $\implies$ $\mathbf{v}^T\lambda\mathbf{v}\ge 0$ $\implies$ $\lambda\|\mathbf{v}\|^2\ge 0$ $\implies$ $\lambda \ge 0$
+> **右推左**：任取 $\mathbf{v}\in\mathbb{R}^n$，只要证 $\mathbf{v}^TA\mathbf{v}\ge 0$。
+> $A$ 是实对称矩阵，一定可正交对角化：$A=PDP^T$（其中 $P$ 是正交矩阵，由 $A$ 的 eigenvector 构成；$D$ 是对角矩阵，由 $A$ 的 eigenvalue 构成）。
+> 则 $\mathbf{v}^TA\mathbf{v}=\mathbf{v}^TPDP^T\mathbf{v}$
+> 记 $\mathbf{y}=P^T\mathbf{v}$，则 $\mathbf{v}^TA\mathbf{v}=\mathbf{y}^TD\mathbf{y}=\mathbf{y}\cdot D\mathbf{y}=\begin{bmatrix}y_1 \\ y_2 \\ \vdots \\ y_n\end{bmatrix}\cdot \begin{bmatrix}\lambda_1y_1 \\ \lambda_2y_2 \\ \vdots \\ \lambda_ny_n\end{bmatrix}=\lambda_1y_1^2+\lambda_2y_2^2+\cdots+\lambda_ny_n^2$
+> 由于 $\lambda_i\ge 0$，因此 $\mathbf{v}^TA\mathbf{v}\ge 0$。

@@ -407,3 +407,38 @@ null space 表示“==所有被矩阵映射到 $\mathbf{0}$ 的输入向量的�
 > $$\text{rank}\ A=\text{rank}\ A^T$$
 
 > 证明：$\text{rank}\ A^T=\text{dim}(\text{Col}\ A^T)=\text{dim}(\text{Row}\ A)=\text{rank}\ A$
+
+# Matrix multiplication vs Rank
+
+> [!important] 矩阵相乘，rank 减小或保持不变
+> $A$ 是 $m\times n$ 矩阵，$B$ 是 $n\times p$ 矩阵，有：
+> - $\text{rank}\ AB \leq \text{rank}\ A$
+> - $\text{rank}\ AB \leq \text{rank}\ B$
+> 
+> 上述定理可以统一写为：==$\text{rank}\ AB \leq \min(\text{rank}\ A, \text{rank}\ B)$==
+
+> 助记：==矩阵相乘，rank 减小或保持不变==。
+
+> 证明：
+> **先证** $\text{rank}\ AB \leq \text{rank}\ A$：只要证 $\text{dim}(\text{Col}\ AB)\le\text{dim}(\text{Col}\ A)$
+> 只要证 $\text{Col}\ AB\subseteq \text{Col}\ A$
+> 只要证 $\forall \mathbf{w}\in \text{Col}\ AB$，$\mathbf{w}\in\text{Col}\ A$
+> $\mathbf{w}\in \text{Col}\ AB$ $\implies$ $\mathbf{w}=(AB)\mathbf{u}$ $\implies$ $\mathbf{w}=A(B\mathbf{u})$ $\implies$ $\mathbf{w}\in\text{Col}\ A$
+> 
+> **再证** $\text{rank}\ AB \leq \text{rank}\ B$：
+> $\text{rank}\ AB = \text{rank}(AB)^T = \text{rank}\ B^TA^T \le \text{rank}\ B^T = \text{rank}\ B$
+
+> [!important] 矩阵相乘，rank 保持不变的充分条件
+> $A$ 是 $m\times n$ 矩阵，$B$ 是 $n\times p$ 矩阵：
+> - $\text{rank}\ B=n$ $\implies$ $\text{rank}\ AB = \text{rank}\ A$
+> - $\text{rank}\ A=n$ $\implies$ $\text{rank}\ AB = \text{rank}\ B$
+
+> 证明：
+> **命题1**：只要证 $\text{dim}(\text{Col}\ AB)=\text{dim}(\text{Col}\ A)$
+> 只要证 $\text{Col}\ AB=\text{Col}\ A$
+> ①只要证 $\forall \mathbf{w}\in \text{Col}\ AB$，$\mathbf{w}\in\text{Col}\ A$。
+>    $\mathbf{w}=AB\mathbf{u}$ $\implies$ $\mathbf{w}=A(B\mathbf{u})$ $\implies$ $\mathbf{w}\in\text{Col}\ A$
+> ②只要证 $\forall \mathbf{w}\in \text{Col}\ A$，$\mathbf{w}\in\text{Col}\ AB$
+>    $\mathbf{w}=A\mathbf{u}$，希望推得 $\mathbf{w}=AB\mathbf{v}$，进而 $\mathbf{w}\in\text{Col}\ AB$。
+>    令 $\mathbf{u}=B\mathbf{v}$，由于 $\text{rank}\ B=n$，因此方程组总是有解。
+> **命题2**：$\text{rank}\ AB=\text{rank}(AB)^T=\text{rank}\ B^TA^T\xlongequal{\text{命题1}}\text{rank}\ B^T=\text{rank}\ B$
