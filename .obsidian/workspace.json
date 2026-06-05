@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b4299f7d8261ffef",
+            "id": "1d1abb9f39f2f017",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapter 6/5  SVD.md",
+                "file": "Chapter 7/1  vector space.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5  SVD"
+              "title": "1  vector space"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Chapter 6/5  SVD.md",
+                "file": "Chapter 7/1  vector space.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "5  SVD 的大纲"
+              "title": "1  vector space 的大纲"
             }
           },
           {
@@ -196,36 +196,37 @@
   },
   "active": "57f76bfbdd905605",
   "lastOpenFiles": [
+    "Chapter 6/5  SVD.md",
+    "Chapter 7/1  vector space.md",
+    "Chapter 6/1  orthogonality.md",
+    "Chapter 6/4  real symmetric matrix.md",
+    "resource/Pasted image 20260604174530.png",
+    "Chapter 2/2  matrix inverse.md",
+    "Chapter 1/1  linear.md",
+    "Chapter 1/2  course introduction.md",
+    "resource/Pasted image 20260604162919.png",
+    "resource/Pasted image 20260604160433.png",
+    "Chapter 1/5  matrix.md",
+    "Chapter 1/3  vector.md",
+    "Chapter 1/6  solution.md",
     "Chapter 4/1  subspace.md",
     "Chapter 4/2  coordinate system.md",
-    "Chapter 6/5  SVD.md",
     "Chapter 4/2  Rank 性质总结.md",
     "Chapter 5/1  eigenvalues and eigenvectors.md",
     "Chapter 1/7  RREF.md",
     "resource/Pasted image 20260603152415.png",
     "Chapter 2/1  matrix multiplication.md",
-    "Chapter 2/2  matrix inverse.md",
-    "Chapter 6/4  real symmetric matrix.md",
     "resource/Pasted image 20260603121636.png",
     "Pasted image 20260603121734.png",
     "resource/Pasted image 20260603121137.png",
     "Pasted image 20260603120045.png",
-    "Chapter 6/1  orthogonality.md",
     "Chapter 6/2  orthogonal projection.md",
     "Chapter 6/3  orthogonal matrix.md",
     "resource/Pasted image 20260602190715.png",
     "resource/Pasted image 20260602130501.png",
-    "Pasted image 20260602130459.png",
-    "Chapter 1/6  solution.md",
     "Chapter 3/1  determinant.md",
     "Chapter 7",
-    "Chapter 1/1  linear.md",
-    "resource/Pasted image 20260527174001.png",
-    "resource/Pasted image 20260527172518.png",
-    "Chapter 1/2  course introduction.md",
-    "Chapter 1/5  matrix.md",
     "Chapter 1/4  system of linear equations.md",
-    "Chapter 1/3  vector.md",
     "Chapter 6",
     "Chapter 5",
     "Chapter 3",

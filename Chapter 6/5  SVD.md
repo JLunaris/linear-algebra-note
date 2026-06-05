@@ -124,11 +124,11 @@
 
 ![[Pasted image 20260603152415.png|414]]
 
-考虑 $\text{rank}\ U_{k-1}=k-1$，$\text{rank}\ V_{k-1}^T=\text{rank}\ V_{k-1}=k-1$。由“矩阵相乘，rank 保持不变的充分条件”知，$\text{rank}\ A_{k-1}=\text{rank}\ \Sigma_{k-1}=k-1$。
+由于 $\text{rank}\ U_{k-1}=k-1$，$\text{rank}\ V_{k-1}^T=\text{rank}\ V_{k-1}=k-1$，由“矩阵相乘，rank 保持不变的充分条件”知，$\text{rank}\ A_{k-1}=\text{rank}\ \Sigma_{k-1}=k-1$。
 
 虽然 $A\neq A_{k-1}$，但是 $A_{k-1}$​ 是所有 rank $\le k-1$ 的矩阵中最接近 $A$ 的矩阵，即使得 $\|A-A'\|_F$ 最小的 $A'$。
 
-> 矩阵 $A$ 的 Frobenius 范数记作 $\|A\|_F$，含义为：把矩阵扁平化为一个向量，然后计算这个向量的 2-norm。
+> 矩阵 $A$ 的 **frobenius norm** 记作 $\|A\|_F$，含义为：把矩阵扁平化为一个向量，然后计算这个向量的 2-norm。
 
 > [!important] Truncated SVD
 > 对任意 $m\times n$ 实矩阵 $A$ 做 reduced SVD：$$A=U_k\Sigma_k V_k^T$$
