@@ -221,12 +221,12 @@ Matrix-Vector Product 中，可以将矩阵看作一个函数：对于 $m\times 
 > **1** $A$ is one-to-one $\implies$ $A$ is onto $\implies$ $A$ is invertible，反之也成立
 > **1.1** 见本节"Summary：矩阵 invertible 的三个等价定义"，证明见本节"Invertible ⟺ one-to-one 且 onto"中引理1、2的证明
 > **1.2** 见本节"one-to-one/onto 与方程 f(x)=b 的解的关系"
-> **1.2.1~1.2.4** 1.2 等价于 1.2.1（证明见[[6  solution]]的"dependent/independent"的"与线性方程组解的关系"部分）, 1.2.1 等价于其他。
+> **1.2.1~1.2.4** 1.2 等价于 1.2.1（证明见[[4  solution]]的"dependent/independent"的"与线性方程组解的关系"部分）, 1.2.1 等价于其他。
 > **1.2.1.1** 不用说
 > **2** $A$ is onto $\implies$ $A$ is one-to-one $\implies$ $A$ is invertible，反之也成立
 > **2.1** 同 1.1 的证明
 > **2.2** 同 1.2 的证明
-> **2.2.1~2.2.2** 见 [[7  RREF#是否总是有解？]]
+> **2.2.1~2.2.2** 见 [[5  RREF#是否总是有解？]]
 > **3** 
 > ![[Pasted image 20260317094921.png|672]]
 > **4** 左推右：由1.2和2.2共同推出；右推左：右侧可推得1.2或2.2，而它们等价于 invertible。

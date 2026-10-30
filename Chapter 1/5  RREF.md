@@ -195,7 +195,7 @@ $A$ 是一个 $m\times n$ 矩阵，有以下结论：
 因此，在线性方程组 $A\mathbf{x}=\mathbf{b}$ 有解的前提下：
 - $\text{rank}\ A=n$ 就意味着 basic variables 的数量为 $n$，也就意味着 free variable 的数量为 $0$，也就意味着方程组**有唯一解**。
 - $\text{rank}\ A<n$ 就意味着 basic variables 的数量小于 $n$，也就意味着 free variable 的数量不为 $0$，也就意味着方程组**有无穷多解**。
-这与 [[6  solution]] 中的结论完全一致。
+这与 [[4  solution]] 中的结论完全一致。
 
 ##### 是否有解？
 
